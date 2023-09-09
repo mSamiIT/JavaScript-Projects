@@ -36,7 +36,7 @@ body {
 }
 
 /* input */
-input[type="number"] {
+input[type='number'] {
   padding: 15px;
   border-radius: 15px;
   border: 3px solid #004e92;
@@ -53,7 +53,7 @@ input[type="number"] {
   padding: 15px 20px;
   border: none;
   border-radius: 10px;
-  cursor: pointer;
+  
   /* display: block;
   width: 100%; */
   display: inline-block;
@@ -62,11 +62,17 @@ input[type="number"] {
   font-weight: 600;
 }
 
-button:hover {
-  background-color: green;
+.formButton button:hover {
+  cursor: pointer;
+  background: linear-gradient(to right, #505bbe, #0b6abd)
 }
 
 /* div paragraph */
 .calcDiv .message {
   margin: 20px;
+}
+
+.suggestion,
+.calculatedBMI {
+  visibility: hidden;
 }
