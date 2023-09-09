@@ -1,0 +1,63 @@
+@media (max-width: 1130px) {
+  .calcDiv {
+    margin: 200px auto;
+    width: 47%;
+    height: 60%;
+    background: #f4f4f4;
+    color: #000428;
+    border-radius: 15px;
+  }
+  input[type="number"] {
+    /* /* padding: 12px; */
+     width: 110px; 
+  }
+}
+
+
+@media (max-width: 1020px) {
+  .calcDiv {
+    width: 50%;
+    height: 55%;
+  }
+
+  input[type="number"] {
+    width: 100px;
+  }
+}
+
+
+@media (max-width: 820px) {
+  .calcDiv {
+    width: 50%;
+    height: 55%;
+  }
+
+  input[type="number"] {
+    width: 70px;
+  }
+}
+
+@media (max-width: 720px) {
+  .calcDiv {
+    width: 60%;
+    height: 55%;
+  }
+
+  input[type="number"] {
+    padding: 13.5px;
+    width: 55px;
+  }
+}
+
+@media (max-width: 550px) {
+  .calcDiv {
+    width: 80%;
+    height: 58%;
+  }
+
+  input[type="number"] {
+    padding: 12px;
+    width: 53px;
+  }
+}
+
