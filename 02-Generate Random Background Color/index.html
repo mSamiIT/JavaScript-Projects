@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Background Color</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        background-color: purple;
+      }
+      button {
+        padding: 15px 25px;
+        border-radius: 10px;
+        border: none;
+        font-size: 30px;
+        font-weight: 500;
+        margin-top: 20px;
+      }
+      button:hover {
+        cursor: pointer;
+        background-color: rgb(251, 253, 253);
+      }
+    </style>
+  </head>
+  <body>
+    <button class="colorButton">Click to Change Bg-Color</button>
+    <script>
+      'use strict';
+      let btnColor = document.querySelector('.colorButton');
+      let hexCode,
+        num = '';
+      let hash = '#';
+      let body = document.body;
+      const hexString = '0123456789ABCDEF';
+      console.log(hexString.length);
+
+      btnColor.addEventListener('click', function () {
+        hexCode = randomStrIndex();
+        document.body.style.backgroundColor = hash.concat(hexCode);
+        hexCode = '';
+        num = '';
+      });
+
+      //   function
+      function randomStrIndex() {
+        for (let i = 0; i < 6; i++) {
+          let indexNum = Math.trunc(Math.random() * 16);
+          num = num + hexString.at(indexNum);
+          console.log(num);
+        }
+        return num;
+      }
+      //   randomStrIndex();
+    </script>
+  </body>
+</html>
